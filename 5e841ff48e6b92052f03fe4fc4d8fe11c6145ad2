@@ -19,6 +19,23 @@
     },
     {
       "key": {
+        "uuid": "01b15b75_bf6642ad",
+        "filename": "dayOfYear.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1013870
+      },
+      "writtenOn": "2018-04-04T16:37:52Z",
+      "side": 1,
+      "message": "This function implicitly assumes that there\u0027s only one calendaring system.  If it\u0027s used in a context where there are other calendars (e.g., climate modeling), it won\u0027t work.",
+      "revId": "5e841ff48e6b92052f03fe4fc4d8fe11c6145ad2",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "5cb2d0b4_5fe2c223",
         "filename": "dayOfYear.java",
         "patchSetId": 1
@@ -36,6 +53,23 @@
     },
     {
       "key": {
+        "uuid": "5f51fd80_7c3a0b7b",
+        "filename": "dayOfYear.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 1013870
+      },
+      "writtenOn": "2018-04-04T16:37:52Z",
+      "side": 1,
+      "message": "What about leap years?",
+      "revId": "5e841ff48e6b92052f03fe4fc4d8fe11c6145ad2",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "cf09441f_234ccd1d",
         "filename": "dayOfYear.java",
         "patchSetId": 1
@@ -47,6 +81,74 @@
       "writtenOn": "2018-04-04T16:32:39Z",
       "side": 1,
       "message": "hello",
+      "revId": "5e841ff48e6b92052f03fe4fc4d8fe11c6145ad2",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "993947ff_5fe0b365",
+        "filename": "dayOfYear.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1013870
+      },
+      "writtenOn": "2018-04-04T16:37:52Z",
+      "side": 1,
+      "message": "Cut-and-paste is a bad pattern; I think it would be better to just add each month length sequentially and break out when you hit the correct month, so that the number of days per month values each only appear once.",
+      "revId": "5e841ff48e6b92052f03fe4fc4d8fe11c6145ad2",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7ff11822_2462ec68",
+        "filename": "dayOfYear.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 1013870
+      },
+      "writtenOn": "2018-04-04T16:37:52Z",
+      "side": 1,
+      "message": "November only has 30 days",
+      "revId": "5e841ff48e6b92052f03fe4fc4d8fe11c6145ad2",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9d55a242_bbdef317",
+        "filename": "dayOfYear.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 1013870
+      },
+      "writtenOn": "2018-04-04T16:37:52Z",
+      "side": 1,
+      "message": "No checks for month in [1:12]\nAlso, no checks for whether dayOfMonth has a reasonable value.",
+      "revId": "5e841ff48e6b92052f03fe4fc4d8fe11c6145ad2",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "8a478bb4_e6ea96c8",
+        "filename": "dayOfYear.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 1013870
+      },
+      "writtenOn": "2018-04-04T16:37:52Z",
+      "side": 1,
+      "message": "Re-using \"dayOfMonth\" to calculate the day of year makes the code a little confusing to read.  Also, it seems likely that you might want to have a dayOfMonth() function to go along with dayOfYear(), and the names will conflict.",
       "revId": "5e841ff48e6b92052f03fe4fc4d8fe11c6145ad2",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
